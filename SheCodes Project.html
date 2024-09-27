@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Yogurt</title>
+    <style>
+h1 {
+  text-align: center; 
+  color: #f36d78; 
+}
+h2 {
+    text-align: center;
+    border: 2px solid #f36582;
+    font-size: 22px;
+    padding: 18px;
+    border-radius: 8px;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    border-radius: 15px;
+}
+body {
+    background-color: #b3dff5;
+    background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
+    
+}
+p {
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    margin: 30px auto;
+    background-color: #f55676;
+    color: #f0f2f3;
+    font-size: 16px;
+    padding: 15px 20px; 
+    border: none;
+    border-radius: 6px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    transition: all 200ms ease-in-out;
+
+}
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px 50px ;
+}
+.learn-more {
+    color: #ec5372;
+    text-decoration: none;
+    font-size: 15px;
+
+   
+}
+.learn-more:hover {
+    text-decoration: underline;
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+   <h1>
+    I love Yogurt
+</h1> 
+   <h2>
+    Especially strawberry flavoured Greek yogurt
+   </h2>
+  <img 
+  src="https://i0.wp.com/foodzesty.com/wp-content/uploads/2021/07/Greek-Yogurt-with-Strawberries-Dessert.jpg?resize=750%2C1002&ssl=1" 
+  alt="Greek Nonfat Yogurt with Strawberry Recipe" width="200"
+  />
+  <p>
+   <b> What is Greek yogurt?</b><br/>
+    Yogurt is a dairy product that has been consumed since ancient times. In fact, the Greeks were the first to document the
+    use of yogurt in 100 BC.
+   The word “yogurt” is believed to have come from the Turkish word “yoğurmak,” which means to thicken, curdle, or
+    coagulate.
+     Many types of yogurt are available, including Greek-style, which has a higher protein content than other yogurt products.
+    Greek yogurt, often referred to as “strained” yogurt, is made by fermenting yogurt in tanks and then straining whey and
+    other liquids during the final processing steps. The process results in a thicker product with a higher protein content.
+    Additionally, some food manufacturers produce Greek-style yogurt by adding milk proteins to the yogurt at the beginning
+    or end of processing (2Trusted Source).
+    Greek yogurt comes in many varieties, including full fat, reduced fat, and fat-free, as well as flavored and unflavored.
+     Greek yogurt is high in many nutrients and a good source of protein, fat, and carbs, depending on the brand you choose.
+  </p>
+  <a 
+  href="https://www.healthline.com/health/food-nutrition/greek-yogurt-benefits"
+  target="_blank" 
+  class="learn-more"
+  >
+Learn more on Healthline
+</a>
+<br/><br/>
+<button class="buy-button">
+  👉 Buy Greek yogurt
+</button>
+<p>
+    This page was built by Qudrah
+</p>
+</div>
+<script>
+function buy() {
+    let name = prompt("What is your name?");
+    let email = prompt("What is your email address?");
+    let flavor = prompt("What is your favourite yogurt flavor?");
+
+    alert(
+        "Thank you," + name + "! We'll be in touch by email on how you will get your " + flavor + " flavored yogurt soon."
+    );
+
+}
+
+let buyButton = document.querySelector(".buy-button");
+buyButton.addEventListener("click", buy);
+
+
+</script>
+</body>
+</html>
